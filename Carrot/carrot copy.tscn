@@ -1,0 +1,76 @@
+[gd_scene load_steps=7 format=3 uid="uid://yjq0ndtmkosh"]
+
+[ext_resource type="Script" path="res://Carrot.gd" id="1_w688e"]
+[ext_resource type="Texture2D" uid="uid://ckhrnbi64kuej" path="res://assets/carrot.png" id="2_td1gi"]
+[ext_resource type="Shape2D" uid="uid://rtapsx1r3owk" path="res://CarrotItem/CarrotBox.tres" id="3_oxm0j"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cf8hn"]
+size = Vector2(48, 24.1667)
+
+[sub_resource type="Animation" id="Animation_kn6qd"]
+resource_name = "despawn"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Area2D:monitoring")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.8),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_iim4y"]
+_data = {
+"despawn": SubResource("Animation_kn6qd")
+}
+
+[node name="Carrot" type="RigidBody2D"]
+collision_layer = 0
+script = ExtResource("1_w688e")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 0.083334)
+shape = SubResource("RectangleShape2D_cf8hn")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(6, 6)
+texture = ExtResource("2_td1gi")
+
+[node name="Area2D" type="Area2D" parent="."]
+unique_name_in_owner = true
+collision_layer = 3
+collision_mask = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, 0.083334)
+shape = ExtResource("3_oxm0j")
+
+[node name="DespawnTimer" type="Timer" parent="."]
+unique_name_in_owner = true
+wait_time = 5.0
+one_shot = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+unique_name_in_owner = true
+libraries = {
+"": SubResource("AnimationLibrary_iim4y")
+}
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="timeout" from="DespawnTimer" to="." method="_on_despawn_timer_timeout"]

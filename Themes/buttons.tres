@@ -1,0 +1,38 @@
+[gd_resource type="Theme" load_steps=7 format=3 uid="uid://ddwxqo5wrv72t"]
+
+[ext_resource type="FontFile" uid="uid://db8xj5yiiubdy" path="res://assets/fonts/mobile-font/MobileFont.ttf" id="1_evw4m"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_f7454"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_irvat"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2u3wd"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_guf2a"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_w5t8e"]
+
+[resource]
+default_font = ExtResource("1_evw4m")
+default_font_size = 70
+Button/colors/font_color = Color(0.875, 0.875, 0.875, 1)
+Button/colors/font_disabled_color = Color(0.875, 0.875, 0.875, 0.5)
+Button/colors/font_focus_color = Color(0.95, 0.95, 0.95, 1)
+Button/colors/font_hover_color = Color(0.95, 0.95, 0.95, 1)
+Button/colors/font_hover_pressed_color = Color(1, 1, 1, 1)
+Button/colors/font_outline_color = Color(1, 1, 1, 1)
+Button/colors/font_pressed_color = Color(0.713726, 0.713726, 0.713726, 1)
+Button/colors/icon_disabled_color = Color(1, 1, 1, 0.4)
+Button/colors/icon_focus_color = Color(1, 1, 1, 1)
+Button/colors/icon_hover_color = Color(1, 1, 1, 1)
+Button/colors/icon_hover_pressed_color = Color(1, 1, 1, 1)
+Button/colors/icon_normal_color = Color(1, 1, 1, 1)
+Button/colors/icon_pressed_color = Color(1, 1, 1, 1)
+Button/constants/h_separation = 4
+Button/constants/icon_max_width = 0
+Button/constants/outline_size = 0
+Button/styles/disabled = SubResource("StyleBoxEmpty_f7454")
+Button/styles/focus = SubResource("StyleBoxEmpty_irvat")
+Button/styles/hover = SubResource("StyleBoxEmpty_2u3wd")
+Button/styles/normal = SubResource("StyleBoxEmpty_guf2a")
+Button/styles/pressed = SubResource("StyleBoxEmpty_w5t8e")
