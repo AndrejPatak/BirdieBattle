@@ -6,12 +6,14 @@ There are pre-built executables available,but if any of them dont work, feel fre
     To download the necesarry files, go to [the releases page](https://github.com/AndrejPatak/BirdieBattle/releases/tag/0.0.1), then download the .zip file with the name of your OS/platform of choice!
     I hope you can get some fun out of this game and i hope you enjoy your time playing it.
 
-Supperted OS's: 
-    -GNU/LINUX
-    -WINDOWS
-    -ANDROID (coming soon!)
---------------
 
+# Supperted OS's:    
+--------------
+-GNU/LINUX
+-WINDOWS
+-ANDROID (coming soon!)
+
+--------------
 This game is a small passion project and is by no means perfect. Everything here was made solo and by an inexperienced dev (me!)
 
 I hope you enjoy it, if you have any friends that can come over to play with you.
