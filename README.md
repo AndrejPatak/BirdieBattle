@@ -9,9 +9,9 @@ There are pre-built executables available,but if any of them dont work, feel fre
 
 # Supperted OS's:    
 --------------
--GNU/LINUX
--WINDOWS
--ANDROID (coming soon!)
+- GNU/LINUX
+- WINDOWS
+- ANDROID (coming soon!)
 
 --------------
 This game is a small passion project and is by no means perfect. Everything here was made solo and by an inexperienced dev (me!)
