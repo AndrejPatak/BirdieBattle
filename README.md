@@ -3,7 +3,7 @@ Birdie Battle is an offline one-on-one game starring 7 funky birds. Fight your d
 
 # Install:
 There are pre-built executables available,but if any of them dont work, feel free to build it from source with the Godot engine!
-    To download the necesarry files, go to [the releases page](https://github.com/AndrejPatak/BirdieBattle/releases/tag/0.0.1), then download the .zip file with the name of your OS/platform of choice!
+    To download the necesarry files, go to [the releases page](https://github.com/AndrejPatak/BirdieBattle/releases/tag/0.0.1), then download the .zip file with the name of your OS/platform of choice.
     I hope you can get some fun out of this game and i hope you enjoy your time playing it.
 
 
